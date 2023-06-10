@@ -42,4 +42,8 @@ jobs:
             with:
               cdk_subcommand: "synth"
 
- 
+          - name: cdk deploy
+            uses: tj-actions/aws-cdk@v4
+            with:
+                cdk_subcommand: "deploy"
+                cdk_extra_args: "--require-approval never"

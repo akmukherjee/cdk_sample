@@ -30,7 +30,7 @@ jobs:
             uses: tj-actions/aws-cdk@v4
             with:
               cdk_subcommand: "bootstrap"
-              
+              cdk_extra_args: "aws://420434175168/us-west-2"
 
     
           - name: cdk synth

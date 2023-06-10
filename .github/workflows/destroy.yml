@@ -45,5 +45,5 @@ jobs:
           - name: cdk destroy
             uses: tj-actions/aws-cdk@v4
             with:
-                cdk_subcommand: "deploy"
+                cdk_subcommand: "destroy"
                 cdk_extra_args: "--require-approval never"
